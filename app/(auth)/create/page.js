@@ -1,62 +1,18 @@
 'use client';
 
-import z from 'zod';
-import { toast } from 'react-hot-toast';
+import { registerAction } from '@/app/lib/actions/auth';
 import styles from '@/app/styles/FormAuth.module.css';
-import { ArrowLeft } from 'lucide-react';
-import { redirect } from 'next/navigation';
-import { createUser } from '@/app/lib/credentials';
+import { ArrowLeft, TriangleAlert } from 'lucide-react';
 import Link from 'next/link';
+import { useActionState } from 'react';
 
-const CreateUserSchema = z
-  .object({
-    nome: z.string({ message: 'Insira um nome/nickname' }).trim(),
-    email: z.email('Email com formato incorreto').trim(),
-    password: z
-      .string({ message: 'Insira uma senha' })
-      .trim()
-      .min(4, { message: 'Senha precisa de no mínimo de 4 caracteres' }),
-    confPassword: z
-      .string({ message: 'Insira uma confirmação de senha' })
-      .trim()
-      .min(1, { message: 'Confirmar senha não pode ser vazia' }),
-  })
-  .refine(data => data.password === data.confPassword, {
-    message: 'Senhas não conferem',
-    path: ['confPassword'],
-  });
+const initialState = {
+  message: null,
+  errors: {},
+};
 
 export default function CreateUser() {
-  const createNewUser = async formData => {
-    const newUser = {
-      nome: formData.get('nome'),
-      email: formData.get('email'),
-      password: formData.get('senha'),
-      confPassword: formData.get('conf-senha'),
-    };
-
-    const filterRes = CreateUserSchema.safeParse(newUser);
-
-    if (!filterRes.success) {
-      let errorMsg = '';
-
-      filterRes.error.issues.forEach(issue => {
-        errorMsg = errorMsg + issue.message + '. \n';
-      });
-
-      toast.error(errorMsg);
-      return;
-    }
-
-    const res = await createUser(newUser);
-    if (res.error) {
-      toast.error(res.error);
-      return;
-    } else {
-      toast.success(res.success);
-      redirect('/login');
-    }
-  };
+  const [state, formAction] = useActionState(registerAction, initialState);
 
   return (
     <div className={styles['form-container']}>
@@ -67,15 +23,20 @@ export default function CreateUser() {
           </Link>
         </div>
         <h2>Criar conta</h2>
-        <form action={createNewUser}>
+        <form action={formAction}>
           <div className={styles['form-input']}>
-            <label htmlFor='email'>Nome</label>
+            <label htmlFor='nome'>Nome</label>
             <input
               type='text'
               name='nome'
               id='nome'
               placeholder='Insira seu nome ou nickname'
             />
+            {state.errors?.nome && (
+              <div className={styles['error-msg']}>
+                <TriangleAlert /> {state.errors.nome[0]}
+              </div>
+            )}
           </div>
 
           <div className={styles['form-input']}>
@@ -86,26 +47,41 @@ export default function CreateUser() {
               id='email'
               placeholder='Insira seu email'
             />
+            {state.errors?.email && (
+              <div className={styles['error-msg']}>
+                <TriangleAlert /> {state.errors.email[0]}
+              </div>
+            )}
           </div>
 
           <div className={styles['form-input']}>
             <label htmlFor='senha'>Senha</label>
             <input
               type='password'
-              name='senha'
-              id='senha'
+              name='password'
+              id='password'
               placeholder='Insira sua senha'
             />
+            {state.errors?.password && (
+              <div className={styles['error-msg']}>
+                <TriangleAlert /> {state.errors.password[0]}
+              </div>
+            )}
           </div>
 
           <div className={styles['form-input']}>
-            <label htmlFor='senha'>Confirmar senha</label>
+            <label htmlFor='confPassword'>Confirmar senha</label>
             <input
               type='password'
-              name='conf-senha'
-              id='conf-senha'
+              name='confPassword'
+              id='confPassword'
               placeholder='Confirme sua senha'
             />
+            {state.errors?.confPassword && (
+              <div className={styles['error-msg']}>
+                <TriangleAlert /> {state.errors.confPassword[0]}
+              </div>
+            )}
           </div>
 
           <button type='submit'>Cadastrar-se</button>

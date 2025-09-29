@@ -29,3 +29,26 @@ export const CharacterTransformSchema = z.object({
   nome: z.string().min(1, { message: 'Insira um nome' }).trim(),
   img: z.httpUrl({ message: 'Insira um URL válido' }).trim(),
 });
+
+export const LoginSchema = z.object({
+  email: z.email('Email com formato incorreto').trim(),
+  password: z.string().trim().min(1, { message: 'Insira uma senha' }),
+});
+
+export const RegisterSchema = z
+  .object({
+    nome: z.string({ message: 'Insira um nome/nickname' }).trim(),
+    email: z.email('Email com formato incorreto').trim(),
+    password: z
+      .string({ message: 'Insira uma senha' })
+      .trim()
+      .min(4, { message: 'Senha precisa de no mínimo de 4 caracteres' }),
+    confPassword: z
+      .string({ message: 'Insira uma confirmação de senha' })
+      .trim()
+      .min(1, { message: 'Confirmar senha não pode ser vazia' }),
+  })
+  .refine(data => data.password === data.confPassword, {
+    message: 'Senhas não conferem',
+    path: ['confPassword'],
+  });

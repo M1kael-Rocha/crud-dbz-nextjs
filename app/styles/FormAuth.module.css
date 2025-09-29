@@ -104,3 +104,19 @@
     color: #1c4595;
   }
 }
+
+.error-msg {
+  background-color: #fee;
+  color: #c33;
+  font-size: 15px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0.25rem;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
