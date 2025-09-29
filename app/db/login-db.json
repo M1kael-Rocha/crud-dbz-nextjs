@@ -1,0 +1,30 @@
+[
+  {
+    "id": "5d36441f-8ff5-4860-86f2-d4e2edabe4dc",
+    "nome": "LEAK",
+    "email": "test@testmaster.com",
+    "password": "$2b$10$Gry1SpJ7yx5PhdqQNzawb.bSKzaS29nz1MSaL8YdnSe77CM.Lj9PG",
+    "imgProfile": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_960_720.png"
+  },
+  {
+    "id": "4ae311ad-a2a2-4de9-8607-e784e01e976e",
+    "nome": "Kael",
+    "email": "test2@testmaster.com",
+    "password": "$2b$10$RtkLDU1Iojbx6IPnUSZXlesRu9.WT2nl2zrpprRJKVsNwJrnqCu0e",
+    "imgProfile": "https://i.pinimg.com/474x/76/22/59/7622594763e8de060fd8ecbec7b79335.jpg"
+  },
+  {
+    "id": "8dcc3906-7306-40b8-8f2f-d6f75b9db2f2",
+    "nome": "marolanda",
+    "email": "marolandafumaprakrl@fuma.br",
+    "password": "$2b$10$GZMcbwU9AtzDLpd9mxV//.c7OlsODMDq42Q/s3rKqHshsGhjAXT/G",
+    "imgProfile": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_960_720.png"
+  },
+  {
+    "id": "8073eed4-df48-4c4c-bf5d-0d0f8d500add",
+    "nome": "Musgo",
+    "email": "brenockarmello@gmail.com",
+    "password": "$2b$10$lHCHaviqnOEKI87rP5uqFOYUSc2lNz5wSsh1owGvhSoUk5Hnt/Zfy",
+    "imgProfile": "https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_960_720.png"
+  }
+]

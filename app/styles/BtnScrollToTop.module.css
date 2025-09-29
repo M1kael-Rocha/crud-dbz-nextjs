@@ -1,0 +1,17 @@
+.btn-box {
+  position: fixed;
+  right: 0px; /* Deslocamento horizontal para direita */
+  bottom: 40px; /* Deslocamento vertical para baixo */
+  z-index: 10;
+  background-color: #00000086;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  svg {
+    color: #fff;
+  }
+}

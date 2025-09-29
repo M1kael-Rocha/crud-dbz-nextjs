@@ -1,0 +1,12 @@
+.main-character {
+  background-image: url('../../public/character-bg.jpg');
+  background-position: center;
+  background-size: 90vw;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}

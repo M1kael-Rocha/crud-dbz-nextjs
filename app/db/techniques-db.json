@@ -1,0 +1,498 @@
+[
+  {
+    "id": "1",
+    "nome": "Kamehameha",
+    "descricao": "Rajada de energia lançada pelas mãos"
+  },
+  {
+    "id": "2",
+    "nome": "Kaioken",
+    "descricao": "Aumento temporário de poder e velocidade"
+  },
+  {
+    "id": "3",
+    "nome": "Genki Dama",
+    "descricao": "Esfera formada com energia vital de seres"
+  },
+  {
+    "id": "4",
+    "nome": "Shunkan Ido",
+    "descricao": "Teletransporte instantâneo para qualquer lugar"
+  },
+  {
+    "id": "5",
+    "nome": "Dragon Fist",
+    "descricao": "Soco com energia em forma de dragão dourado"
+  },
+  {
+    "id": "6",
+    "nome": "Galick Gun",
+    "descricao": "Rajada roxa de energia lançada pelas mãos"
+  },
+  {
+    "id": "7",
+    "nome": "Final Flash",
+    "descricao": "Poderoso raio dourado concentrado"
+  },
+  {
+    "id": "8",
+    "nome": "Big Bang Attack",
+    "descricao": "Esfera explosiva de energia azul"
+  },
+  {
+    "id": "9",
+    "nome": "Masenko",
+    "descricao": "Rajada de energia lançada de cima da cabeça"
+  },
+  {
+    "id": "10",
+    "nome": "Kamehameha Pai e Filho",
+    "descricao": "Ataque combinado de Goku e Gohan"
+  },
+  {
+    "id": "11",
+    "nome": "Explosive Madan",
+    "descricao": "Sequência rápida de rajadas de energia"
+  },
+  {
+    "id": "12",
+    "nome": "Makankosappo",
+    "descricao": "Raio perfurante em espiral concentrada"
+  },
+  {
+    "id": "13",
+    "nome": "Hellzone Grenade",
+    "descricao": "Várias esferas cercam e explodem o inimigo"
+  },
+  {
+    "id": "14",
+    "nome": "Light Grenade",
+    "descricao": "Esfera luminosa de energia explosiva"
+  },
+  {
+    "id": "15",
+    "nome": "Kienzan",
+    "descricao": "Disco cortante de energia letal"
+  },
+  {
+    "id": "16",
+    "nome": "Taiyoken",
+    "descricao": "Flash de luz que cega inimigos"
+  },
+  {
+    "id": "17",
+    "nome": "Burning Attack",
+    "descricao": "Rajada feita após movimentos rápidos"
+  },
+  {
+    "id": "18",
+    "nome": "Finish Buster",
+    "descricao": "Explosão de energia concentrada"
+  },
+  {
+    "id": "19",
+    "nome": "Shining Sword Attack",
+    "descricao": "Ataque combinado de espada e energia"
+  },
+  {
+    "id": "20",
+    "nome": "Death Beam",
+    "descricao": "Raio fino disparado pelo dedo"
+  },
+  {
+    "id": "21",
+    "nome": "Death Ball",
+    "descricao": "Esfera negra para destruir planetas"
+  },
+  {
+    "id": "22",
+    "nome": "Nova Strike",
+    "descricao": "Investida com aura protetora"
+  },
+  {
+    "id": "23",
+    "nome": "Telecinese",
+    "descricao": "Manipulação de objetos com energia"
+  },
+  {
+    "id": "24",
+    "nome": "Supernova",
+    "descricao": "Esfera massiva de energia destrutiva"
+  },
+  {
+    "id": "25",
+    "nome": "Planet Burst",
+    "descricao": "Esfera capaz de aniquilar planetas"
+  },
+  {
+    "id": "26",
+    "nome": "Candy Beam",
+    "descricao": "Transforma inimigos em doces"
+  },
+  {
+    "id": "27",
+    "nome": "Absorção",
+    "descricao": "Incorpora inimigos e ganha poderes"
+  },
+  {
+    "id": "28",
+    "nome": "Regeneração",
+    "descricao": "Restaura corpo após danos graves"
+  },
+  {
+    "id": "29",
+    "nome": "Kikoho",
+    "descricao": "Golpe triangular de energia letal"
+  },
+  {
+    "id": "30",
+    "nome": "Rogafufuken",
+    "descricao": "Sequência de golpes rápidos do lobo"
+  },
+  {
+    "id": "31",
+    "nome": "Barrier",
+    "descricao": "Campo protetor de energia defensiva"
+  },
+  { "id": "32", "nome": "Hakai", "descricao": "Destruição completa do alvo" },
+  {
+    "id": "33",
+    "nome": "Ultra Instinct",
+    "descricao": "Movimento sem pensamento consciente"
+  },
+  {
+    "id": "34",
+    "nome": "Destructo Disc Barrage",
+    "descricao": "Múltiplos discos de energia cortante"
+  },
+  {
+    "id": "35",
+    "nome": "Spirit Sword",
+    "descricao": "Espada feita de energia pura"
+  },
+  {
+    "id": "36",
+    "nome": "Energy Absorption",
+    "descricao": "Absorve energia de ataques inimigos"
+  },
+  {
+    "id": "37",
+    "nome": "Mafuba",
+    "descricao": "Técnica de selamento em jarra"
+  },
+  {
+    "id": "38",
+    "nome": "Zanzoken",
+    "descricao": "Movimento apósimagem para enganar"
+  },
+  {
+    "id": "39",
+    "nome": "Afterimage Strike",
+    "descricao": "Ataque surpresa após imagem falsa"
+  },
+  {
+    "id": "40",
+    "nome": "Bakuhatsuha",
+    "descricao": "Explosão de energia ao redor do usuário"
+  },
+  {
+    "id": "41",
+    "nome": "Big Bang Kamehameha",
+    "descricao": "Fusão do Kamehameha com Big Bang"
+  },
+  {
+    "id": "42",
+    "nome": "Galick Kamehameha",
+    "descricao": "Mistura do Galick Gun e Kamehameha"
+  },
+  {
+    "id": "43",
+    "nome": "Final Shine Attack",
+    "descricao": "Poderoso feixe de energia verde"
+  },
+  {
+    "id": "44",
+    "nome": "Energy Ring",
+    "descricao": "Anéis de energia que prendem o inimigo"
+  },
+  {
+    "id": "45",
+    "nome": "Kakusandan",
+    "descricao": "Rajadas divididas que cercam inimigos"
+  },
+  {
+    "id": "46",
+    "nome": "Wolf Fang Blast",
+    "descricao": "Versão energética do ataque do lobo"
+  },
+  {
+    "id": "47",
+    "nome": "Crusher Ball",
+    "descricao": "Esfera de energia usada por Jeice"
+  },
+  {
+    "id": "48",
+    "nome": "Recoome Eraser Gun",
+    "descricao": "Rajada de energia da boca de Recoome"
+  },
+  {
+    "id": "49",
+    "nome": "Ginyu Pose",
+    "descricao": "Troca de corpo realizada por Ginyu"
+  },
+  {
+    "id": "50",
+    "nome": "Milky Cannon",
+    "descricao": "Explosão energética usada por Freeza"
+  },
+  {
+    "id": "51",
+    "nome": "Mystic Attack",
+    "descricao": "Piccolo estica braços para surpreender"
+  },
+  {
+    "id": "52",
+    "nome": "Special Hurricane",
+    "descricao": "Rotação rápida para repelir ataques"
+  },
+  {
+    "id": "53",
+    "nome": "Masendan",
+    "descricao": "Esfera de energia lançada com uma mão"
+  },
+  {
+    "id": "54",
+    "nome": "Double Sunday",
+    "descricao": "Rajadas duplas disparadas pelas mãos"
+  },
+  {
+    "id": "55",
+    "nome": "Crusher Volcano",
+    "descricao": "Explosão massiva de energia vulcânica"
+  },
+  {
+    "id": "56",
+    "nome": "Saiyan Smash",
+    "descricao": "Golpe físico devastador de Saiyajin"
+  },
+  {
+    "id": "57",
+    "nome": "Final Impact",
+    "descricao": "Soco energizado com grande impacto"
+  },
+  {
+    "id": "58",
+    "nome": "Atomic Blast",
+    "descricao": "Explosão precisa de energia concentrada"
+  },
+  {
+    "id": "59",
+    "nome": "Blaster Shell",
+    "descricao": "Projétil energético usado por Broly"
+  },
+  {
+    "id": "60",
+    "nome": "Eraser Cannon",
+    "descricao": "Esfera de energia lançada pela mão"
+  },
+  {
+    "id": "61",
+    "nome": "Omega Blaster",
+    "descricao": "Explosão de energia massiva de Broly"
+  },
+  {
+    "id": "62",
+    "nome": "Bio Kamehameha",
+    "descricao": "Versão do Kamehameha usada por Cell"
+  },
+  {
+    "id": "63",
+    "nome": "Super Kamehameha",
+    "descricao": "Versão mais poderosa do Kamehameha"
+  },
+  {
+    "id": "64",
+    "nome": "Final Explosion",
+    "descricao": "Auto-sacrifício explosivo de Vegeta"
+  },
+  {
+    "id": "65",
+    "nome": "Shocking Death Ball",
+    "descricao": "Técnica usada por Cooler em combate"
+  },
+  {
+    "id": "66",
+    "nome": "Supernova Cooler",
+    "descricao": "Versão maior da Supernova de Cooler"
+  },
+  {
+    "id": "67",
+    "nome": "Death Crusher",
+    "descricao": "Golpe físico de energia de Freeza"
+  },
+  {
+    "id": "68",
+    "nome": "Death Storm",
+    "descricao": "Múltiplas rajadas disparadas em série"
+  },
+  {
+    "id": "69",
+    "nome": "Ki Blast Cannon",
+    "descricao": "Explosão massiva de várias ki blasts"
+  },
+  {
+    "id": "70",
+    "nome": "Full Power Charge",
+    "descricao": "Carregamento intenso de energia"
+  },
+  {
+    "id": "71",
+    "nome": "Spirit Bomb Absorb",
+    "descricao": "Goku absorve Genki Dama no corpo"
+  },
+  {
+    "id": "72",
+    "nome": "Super Spirit Bomb",
+    "descricao": "Versão maior da Genki Dama"
+  },
+  {
+    "id": "73",
+    "nome": "Saiyan Spirit",
+    "descricao": "Ataque com aura e energia vital"
+  },
+  {
+    "id": "74",
+    "nome": "Hyper Tornado",
+    "descricao": "Vento cortante criado com energia"
+  },
+  {
+    "id": "75",
+    "nome": "Dragon Throw",
+    "descricao": "Golpe físico de agarrar e arremessar"
+  },
+  {
+    "id": "76",
+    "nome": "Super Ghost Kamikaze",
+    "descricao": "Clones explosivos usados por Gotenks"
+  },
+  {
+    "id": "77",
+    "nome": "Galactic Donut",
+    "descricao": "Anel de energia que prende inimigos"
+  },
+  {
+    "id": "78",
+    "nome": "Charging Ultra Buu Buu",
+    "descricao": "Tentáculos usados para prender alvo"
+  },
+  {
+    "id": "79",
+    "nome": "Vanishing Ball",
+    "descricao": "Esfera de energia que explode no impacto"
+  },
+  {
+    "id": "80",
+    "nome": "Mystic Breath",
+    "descricao": "Sopro energético devastador"
+  },
+  {
+    "id": "81",
+    "nome": "Barrier Punch",
+    "descricao": "Soco protegido por barreira energética"
+  },
+  {
+    "id": "82",
+    "nome": "Final Kamehameha",
+    "descricao": "Fusão de Final Flash e Kamehameha"
+  },
+  {
+    "id": "83",
+    "nome": "Big Bang Attack x10",
+    "descricao": "Versão amplificada do ataque clássico"
+  },
+  {
+    "id": "84",
+    "nome": "Ultra Masenko",
+    "descricao": "Versão mais forte do Masenko de Gohan"
+  },
+  {
+    "id": "85",
+    "nome": "Saiyan Rage Blast",
+    "descricao": "Explosão de energia em fúria Saiyajin"
+  },
+  {
+    "id": "86",
+    "nome": "Majin Kamehameha",
+    "descricao": "Versão corrompida do Kamehameha"
+  },
+  {
+    "id": "87",
+    "nome": "Death Flash",
+    "descricao": "Rajada luminosa usada por Freeza"
+  },
+  {
+    "id": "88",
+    "nome": "Dark Kamehameha",
+    "descricao": "Versão maligna do ataque de Goku"
+  },
+  {
+    "id": "89",
+    "nome": "Ki Blade",
+    "descricao": "Lâmina formada por pura energia"
+  },
+  {
+    "id": "90",
+    "nome": "Double Buster",
+    "descricao": "Rajadas duplas energéticas de Trunks"
+  },
+  {
+    "id": "91",
+    "nome": "Blaster Meteor",
+    "descricao": "Rajadas rápidas de energia de Broly"
+  },
+  {
+    "id": "92",
+    "nome": "Gigantic Meteor",
+    "descricao": "Versão massiva da técnica de Broly"
+  },
+  {
+    "id": "93",
+    "nome": "Ki Barrage",
+    "descricao": "Sequência de pequenos disparos de ki"
+  },
+  {
+    "id": "94",
+    "nome": "Maximum Flasher",
+    "descricao": "Explosão de energia dourada de Vegeta"
+  },
+  {
+    "id": "95",
+    "nome": "Energy Bomb",
+    "descricao": "Esfera de energia lançada ao solo"
+  },
+  {
+    "id": "96",
+    "nome": "Darkness Eye Beam",
+    "descricao": "Raio disparado pelos olhos"
+  },
+  {
+    "id": "97",
+    "nome": "Mouth Energy Wave",
+    "descricao": "Rajada disparada pela boca"
+  },
+  {
+    "id": "98",
+    "nome": "Ki Sense",
+    "descricao": "Habilidade de detectar energias"
+  },
+  {
+    "id": "99",
+    "nome": "Flight",
+    "descricao": "Uso de energia para voar livremente"
+  },
+  {
+    "id": "100",
+    "nome": "Fusion Dance",
+    "descricao": "Dança que une dois guerreiros em um"
+  }
+]

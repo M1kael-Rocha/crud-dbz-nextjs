@@ -1,0 +1,16 @@
+.btn-logout-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 0;
+}
+
+.btn-logout {
+  background: none;
+  color: white;
+  border: none;
+  text-decoration: underline;
+  font-size: 15px;
+  text-underline-offset: 1px;
+  cursor: pointer;
+}

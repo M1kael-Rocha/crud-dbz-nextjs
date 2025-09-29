@@ -1,0 +1,111 @@
+:root {
+  --cor-fundo-card: #272b33;
+  --cor-fundo-icone: #1e2228;
+  --cor-texto-principal: #e2e8f0;
+  --cor-destaque-ambar: #f59e0b;
+  --cor-destaque-ambar-claro: #fcd34d;
+}
+
+.card-container {
+  display: flex;
+  flex: 1 1 350px;
+  background-color: var(--cor-fundo-card);
+  align-items: center;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.card-container:has(input:checked) {
+  border-color: var(--cor-destaque-ambar);
+  background-color: #313740;
+  transform: translateY(-2px);
+  box-shadow:
+    0px 8px 20px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(245, 158, 11, 0.6);
+}
+
+.card-icon {
+  width: 25%;
+  height: 80px;
+  background-color: var(--cor-fundo-icone);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-icon svg {
+  width: 45px;
+  height: 45px;
+  color: var(--cor-destaque-ambar-claro);
+  filter: drop-shadow(0 0 4px var(--cor-destaque-ambar));
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-container:has(input:checked) .card-icon {
+  background-color: #2f2417;
+}
+
+.card-container:has(input:checked) .card-icon svg {
+  color: var(--cor-destaque-ambar-claro);
+  filter: drop-shadow(0 0 8px var(--cor-destaque-ambar))
+    drop-shadow(0 0 15px rgba(245, 158, 11, 0.4));
+  transform: scale(1.05);
+}
+
+.card-icon:hover svg {
+  color: var(--cor-destaque-ambar);
+  filter: drop-shadow(0 0 6px var(--cor-destaque-ambar-claro));
+}
+
+.card-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.card-content h3 {
+  color: var(--cor-texto-principal);
+  font-size: 1.1em;
+  transition: color 0.2s ease-in-out;
+}
+
+.card-content p {
+  color: var(--cor-texto-principal);
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.card-container:has(input:checked) .card-content h3 {
+  color: var(--cor-destaque-ambar-claro);
+}
+
+.card-container:has(input:checked) .card-content p {
+  color: var(--cor-destaque-ambar);
+  opacity: 1;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

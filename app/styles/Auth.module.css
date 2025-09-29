@@ -1,0 +1,22 @@
+.main-auth {
+  position: relative;
+  background-image: url('../../public/login-bg.png');
+  background-position: center;
+  background-size: 75vw;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  isolation: isolate;
+}
+
+.main-auth::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
