@@ -4,7 +4,7 @@
   "debug.console.fontSize": 24,
   "terminal.integrated.fontSize": 24,
   "editor.glyphMargin": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
   "editor.lineNumbers": "off",
   "files.eol": "\n",
   "workbench.editor.labelFormat": "short",

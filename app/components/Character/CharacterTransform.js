@@ -2,7 +2,7 @@
 
 import { addCharacterTransformAction } from '@/app/lib/actions/characters';
 import styles from '@/app/styles/FormCharacter.module.css';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, TriangleAlert } from 'lucide-react';
 import Link from 'next/link';
 import { useActionState } from 'react';
 
