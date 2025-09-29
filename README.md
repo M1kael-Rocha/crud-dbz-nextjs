@@ -93,8 +93,8 @@ Este projeto ainda n√£o atingiu sua forma final! Ideias para futuras transforma√
 
 Feito com muito Ki por **[Seu Nome Aqui]**.
 
-- **LinkedIn:** [https://linkedin.com/in/seu-linkedin](https://www.linkedin.com/in/mikael-rocha-bernardes-39b6681a9)
-- **GitHub:** [https://github.com/seu-usuario](https://github.com/M1kael-Rocha)
+- **LinkedIn:** [https://www.linkedin.com/in/mikael-rocha-bernardes-39b6681a9](https://www.linkedin.com/in/mikael-rocha-bernardes-39b6681a9)
+- **GitHub:** [https://github.com/M1kael-Rocha](https://github.com/M1kael-Rocha)
 
 ---
 
