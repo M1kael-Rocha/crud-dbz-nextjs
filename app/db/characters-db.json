@@ -22,6 +22,16 @@
         "id": "cb17809d-8a49-493b-897d-302f91c68668",
         "nome": "Goku SSJ",
         "img": "https://dragonball-api.com/transformaciones/goku_ssj.webp"
+      },
+      {
+        "id": "f5b54f28-1216-4608-94be-04d63181af68",
+        "nome": "Goku SSJ2",
+        "img": "https://dragonball-api.com/transformaciones/goku_ssj2.webp"
+      },
+      {
+        "id": "24f609d6-f166-424e-84af-42e89577bbcc",
+        "nome": "Goku SSJ3",
+        "img": "https://dragonball-api.com/transformaciones/goku_ssj3.webp"
       }
     ]
   },
@@ -37,7 +47,9 @@
     "baseElevatedBy": "milhão",
     "maxKi": "40",
     "totalElevatedBy": "bilhão",
-    "userId": "5d36441f-8ff5-4860-86f2-d4e2edabe4dc"
+    "userId": "5d36441f-8ff5-4860-86f2-d4e2edabe4dc",
+    "techniqueIds": [],
+    "transformations": []
   },
   {
     "id": "97d32863-4407-40f7-ac38-e38204d16067",

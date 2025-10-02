@@ -4,7 +4,7 @@
   "debug.console.fontSize": 24,
   "terminal.integrated.fontSize": 24,
   "editor.glyphMargin": false,
-  "workbench.activityBar.location": "default",
+  "workbench.activityBar.location": "top",
   "editor.lineNumbers": "off",
   "files.eol": "\n",
   "workbench.editor.labelFormat": "short",
@@ -18,7 +18,7 @@
   },
 
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "javascript.preferences.importModuleSpecifier": "non-relative"
+  "javascript.preferences.importModuleSpecifier": "non-relative",
 
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -34,5 +34,6 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.wordBasedSuggestions": "off"
 }
