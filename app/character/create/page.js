@@ -1,11 +1,11 @@
 'use client';
 
 import styles from '@/app/styles/FormCharacter.module.css';
+import BtnBackPage from '@/app/ui/BtnBackPage';
+import { createNewCharacterAction } from '@/app/lib/actions/characters';
 import { IMaskInput } from 'react-imask';
 import { useActionState } from 'react';
-import { ArrowLeft, TriangleAlert } from 'lucide-react';
-import { createNewCharacterAction } from '@/app/lib/actions/characters';
-import Link from 'next/link';
+import { TriangleAlert } from 'lucide-react';
 
 const initialState = {
   message: null,
@@ -19,16 +19,12 @@ export default function CreateCharacter() {
   );
 
   return (
-    <div className={styles['form-container']}>
-      <div className={styles['form-box']}>
-        <div className={styles['btn-container']}>
-          <Link href={'/dashboard'}>
-            <ArrowLeft />
-          </Link>
-        </div>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <BtnBackPage />
         <h2>Adicionando Personagem</h2>
         <form action={formAction}>
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='nome'>Nome</label>
             <input
               type='text'
@@ -37,13 +33,13 @@ export default function CreateCharacter() {
               placeholder='Insira o nome do personagem'
             />
             {state.errors?.nome && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.nome[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='img'>Imagem</label>
             <input
               type='url'
@@ -52,13 +48,13 @@ export default function CreateCharacter() {
               placeholder='Insira o link (HTTP) da imagem'
             />
             {state.errors?.img && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.img[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='raca'>Raça</label>
             <select name='raca' id='raca'>
               <option value='Humano'>Humano</option>
@@ -77,7 +73,7 @@ export default function CreateCharacter() {
             </select>
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='planeta'>Origem</label>
             <select name='planeta' id='planeta'>
               <option value='Terra'>Planeta Terra</option>
@@ -96,7 +92,7 @@ export default function CreateCharacter() {
             </select>
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='genero'>Gênero</label>
             <select name='genero' id='genero'>
               <option value='Homem'>Homem</option>
@@ -105,9 +101,9 @@ export default function CreateCharacter() {
             </select>
           </div>
 
-          <div className={styles['form-two-columns-container']}>
+          <div className={styles.containerSplit}>
             <label htmlFor='ki'>Base KI</label>
-            <div className={styles['form-input-column']}>
+            <div className={styles.formInputAlt}>
               <IMaskInput
                 type='text'
                 name='ki'
@@ -132,15 +128,15 @@ export default function CreateCharacter() {
               </select>
             </div>
             {state.errors?.ki && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.ki[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-two-columns-container']}>
+          <div className={styles.containerSplit}>
             <label htmlFor='maxKi'>Total KI</label>
-            <div className={styles['form-input-column']}>
+            <div className={styles.formInputAlt}>
               <IMaskInput
                 type='text'
                 name='maxKi'
@@ -165,13 +161,13 @@ export default function CreateCharacter() {
               </select>
             </div>
             {state.errors?.maxKi && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.maxKi[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='descricao'>Descrição</label>
             <textarea
               cols='30'
@@ -181,7 +177,7 @@ export default function CreateCharacter() {
               placeholder='Descreva o seu personagem entre 190 a 200 caracteres'
             ></textarea>
             {state.errors?.descricao && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.descricao[0]}
               </div>
             )}
@@ -190,6 +186,6 @@ export default function CreateCharacter() {
           <button type='submit'>Adicionar</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

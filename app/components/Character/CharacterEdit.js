@@ -1,12 +1,12 @@
 'use client';
 
 import styles from '@/app/styles/FormCharacter.module.css';
+import { editCharacterAction } from '@/app/lib/actions/characters';
+import BtnBackPage from '@/app/ui/BtnBackPage';
 import { useState, useActionState } from 'react';
 import { IMaskInput } from 'react-imask';
-import { ArrowLeft, TriangleAlert } from 'lucide-react';
+import { TriangleAlert } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { editCharacterAction } from '@/app/lib/actions/characters';
 
 const initialState = {
   message: null,
@@ -23,18 +23,14 @@ export default function FormToEdit({ characterToEdit }) {
   const [state, formAction] = useActionState(editCharacterAction, initialState);
 
   return (
-    <div className={styles['form-container']}>
-      <div className={styles['form-box']}>
-        <div className={styles['btn-container']}>
-          <Link href={'/dashboard'}>
-            <ArrowLeft />
-          </Link>
-        </div>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <BtnBackPage />
         <h2>{characterToEdit.nome}</h2>
-        <div className={styles['img-container']}>
+        <div className={styles.containerImg}>
           <Image
             src={imageUrl}
-            className={styles['img-character']}
+            className={styles.img}
             fill={true}
             alt={`Imagem do personagem ${characterToEdit.nome}`}
           />
@@ -46,7 +42,7 @@ export default function FormToEdit({ characterToEdit }) {
             id='idCharacter'
             value={characterToEdit.id}
           />
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='nome'>Nome</label>
             <input
               type='text'
@@ -56,13 +52,13 @@ export default function FormToEdit({ characterToEdit }) {
               defaultValue={characterToEdit.nome}
             />
             {state.errors?.nome && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.nome[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='img'>Imagem</label>
             <input
               type='url'
@@ -73,13 +69,13 @@ export default function FormToEdit({ characterToEdit }) {
               onChange={handleUrlChange}
             />
             {state.errors?.img && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.img[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='raca'>Raça</label>
             <select name='raca' id='raca' defaultValue={characterToEdit.raca}>
               <option value='Humano'>Humano</option>
@@ -98,7 +94,7 @@ export default function FormToEdit({ characterToEdit }) {
             </select>
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='planeta'>Origem</label>
             <select
               name='planeta'
@@ -121,7 +117,7 @@ export default function FormToEdit({ characterToEdit }) {
             </select>
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='genero'>Gênero</label>
             <select
               name='genero'
@@ -134,9 +130,9 @@ export default function FormToEdit({ characterToEdit }) {
             </select>
           </div>
 
-          <div className={styles['form-two-columns-container']}>
+          <div className={styles.containerSplit}>
             <label htmlFor='ki'>Base KI</label>
-            <div className={styles['form-input-column']}>
+            <div className={styles.formInputAlt}>
               <IMaskInput
                 type='text'
                 name='ki'
@@ -165,15 +161,15 @@ export default function FormToEdit({ characterToEdit }) {
               </select>
             </div>
             {state.errors?.ki && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.ki[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-two-columns-container']}>
+          <div className={styles.containerSplit}>
             <label htmlFor='maxKi'>Total KI</label>
-            <div className={styles['form-input-column']}>
+            <div className={styles.formInputAlt}>
               <IMaskInput
                 type='text'
                 name='maxKi'
@@ -202,13 +198,13 @@ export default function FormToEdit({ characterToEdit }) {
               </select>
             </div>
             {state.errors?.maxKi && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.maxKi[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='descricao'>Descrição</label>
             <textarea
               cols='30'
@@ -218,7 +214,7 @@ export default function FormToEdit({ characterToEdit }) {
               defaultValue={characterToEdit.descricao}
             ></textarea>
             {state.errors?.descricao && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.descricao[0]}
               </div>
             )}
@@ -227,6 +223,6 @@ export default function FormToEdit({ characterToEdit }) {
           <button type='submit'>Editar</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

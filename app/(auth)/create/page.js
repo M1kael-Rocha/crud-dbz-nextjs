@@ -2,8 +2,8 @@
 
 import { registerAction } from '@/app/lib/actions/auth';
 import styles from '@/app/styles/FormAuth.module.css';
-import { ArrowLeft, TriangleAlert } from 'lucide-react';
-import Link from 'next/link';
+import BtnBackPage from '@/app/ui/BtnBackPage';
+import { TriangleAlert } from 'lucide-react';
 import { useActionState } from 'react';
 
 const initialState = {
@@ -17,11 +17,7 @@ export default function CreateUser() {
   return (
     <div className={styles['form-container']}>
       <div className={styles['form-box']}>
-        <div className={styles['btn-container']}>
-          <Link href={'/login'}>
-            <ArrowLeft />
-          </Link>
-        </div>
+        <BtnBackPage />
         <h2>Criar conta</h2>
         <form action={formAction}>
           <div className={styles['form-input']}>

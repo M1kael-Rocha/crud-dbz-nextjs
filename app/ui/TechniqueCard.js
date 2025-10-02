@@ -1,23 +1,23 @@
 'use client';
 
-import { Flame } from 'lucide-react';
 import styles from '@/app/styles/TechniqueCard.module.css';
+import { Flame } from 'lucide-react';
 
 export default function TechniqueCard({ isChecked, ...t }) {
   return (
-    <label className={styles['card-container']}>
+    <label className={styles.container}>
       <input
-        className={styles['hidden-checkbox']}
+        className={styles.hiddenCheckbox}
         type='checkbox'
         name='techniqueId'
         value={t.id}
         defaultChecked={isChecked}
       />
 
-      <div className={styles['card-icon']}>
+      <div className={styles.icon}>
         <Flame />
       </div>
-      <div className={styles['card-content']}>
+      <div className={styles.content}>
         <h3>{t.nome}</h3>
         <p>{t.descricao}</p>
       </div>

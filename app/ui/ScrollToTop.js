@@ -9,7 +9,7 @@ export default function ScrollToTop() {
   };
 
   return (
-    <button className={styles['btn-box']} onClick={scrollAction}>
+    <button className={styles.btnScrollToTop} onClick={scrollAction}>
       <ArrowUp />
     </button>
   );

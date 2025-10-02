@@ -10,8 +10,8 @@ export default async function LogoutButton() {
   };
 
   return (
-    <form className={styles['btn-logout-container']} action={logoutAction}>
-      <button className={styles['btn-logout']}>Logout</button>
+    <form className={styles.containerForm} action={logoutAction}>
+      <button className={styles.btnLogout}>Logout</button>
     </form>
   );
 }

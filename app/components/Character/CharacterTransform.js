@@ -2,8 +2,8 @@
 
 import { addCharacterTransformAction } from '@/app/lib/actions/characters';
 import styles from '@/app/styles/FormCharacter.module.css';
-import { ArrowLeft, TriangleAlert } from 'lucide-react';
-import Link from 'next/link';
+import BtnBackPage from '@/app/ui/BtnBackPage';
+import { TriangleAlert } from 'lucide-react';
 import { useActionState } from 'react';
 
 const initialState = {
@@ -18,13 +18,9 @@ export default function CharacterTransform({ character }) {
   );
 
   return (
-    <div className={styles['form-container']}>
-      <div className={styles['form-box']}>
-        <div className={styles['btn-container']}>
-          <Link href={'/dashboard'}>
-            <ArrowLeft />
-          </Link>
-        </div>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <BtnBackPage />
         <h2>Adicionando transformação</h2>
         <form action={formAction}>
           <input
@@ -33,17 +29,17 @@ export default function CharacterTransform({ character }) {
             id='idCharacter'
             value={character.id}
           />
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='nome'>Nome</label>
             <input type='text' name='nome' id='nome' placeholder='Goku SSJ1' />
             {state.errors?.nome && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.nome[0]}
               </div>
             )}
           </div>
 
-          <div className={styles['form-input']}>
+          <div className={styles.formInput}>
             <label htmlFor='img'>Imagem</label>
             <input
               type='url'
@@ -52,7 +48,7 @@ export default function CharacterTransform({ character }) {
               placeholder='Insira o link (HTTP) da imagem'
             />
             {state.errors?.img && (
-              <div className={styles['error-msg']}>
+              <div className={styles.errorMsg}>
                 <TriangleAlert /> {state.errors.img[0]}
               </div>
             )}
@@ -61,6 +57,6 @@ export default function CharacterTransform({ character }) {
           <button type='submit'>Editar</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

@@ -16,53 +16,55 @@ export default function Character({ loggedUserId, ...c }) {
   };
 
   return (
-    <div className={styles['card-container']}>
-      <div className={styles['img-card-container']}>
+    <div className={styles.container}>
+      <div className={styles.containerImg}>
         <Image
           src={c.img}
-          className={styles['img-character']}
+          className={styles.img}
           fill={true}
           alt={`Imagem do personagem ${c.nome}`}
         />
       </div>
 
-      <div className={styles['name-card-container']}>
-        <h3>{c.nome}</h3>
+      <div className={styles.linkToProfileCharacter}>
+        <Link href={`/character/profile/${c.id}`}>
+          <h3>{c.nome}</h3>
+        </Link>
       </div>
 
-      <div className={styles['details-card-container']}>
-        <div className={styles['details-row']}>
-          <div className={styles['details-character']}>
+      <div className={styles.containerSplit}>
+        <div className={styles.containerRow}>
+          <div className={styles.content}>
             <span>Raça: </span>
             <p>{c.raca}</p>
           </div>
 
-          <div className={styles['details-character']}>
+          <div className={styles.content}>
             <span>Gênero: </span>
             <p>{c.genero}</p>
           </div>
         </div>
 
-        <div className={styles['details-row']}>
-          <div className={styles['details-character']}>
+        <div className={styles.containerRow}>
+          <div className={styles.content}>
             <span>Base KI: </span>
             <p>{`${c.ki} ${c.baseElevatedBy}`}</p>
           </div>
 
-          <div className={styles['details-character']}>
+          <div className={styles.content}>
             <span>Total KI: </span>
             <p>{`${c.maxKi} ${c.totalElevatedBy}`}</p>
           </div>
         </div>
 
-        <div className={styles['details-row']}>
-          <div className={styles['details-character-description']}>
+        <div className={styles.containerRow}>
+          <div className={styles.contentTextArea}>
             <p>{c.descricao}</p>
           </div>
         </div>
       </div>
 
-      <div className={styles['options-container']}>
+      <div className={styles.containerOptions}>
         {c.userId === loggedUserId && (
           <Link
             href={`/character/edit/${c.id}`}

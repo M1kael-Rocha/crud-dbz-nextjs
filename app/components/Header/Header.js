@@ -33,8 +33,8 @@ export default async function Header() {
 
   return (
     <header>
-      <section className={styles['header-container']}>
-        <div className={styles['header-logo']}>
+      <section className={styles.header}>
+        <div className={styles.logo}>
           <Link href={'/dashboard/'}>
             <Image
               src={dbzLogo}
@@ -44,28 +44,28 @@ export default async function Header() {
             />
           </Link>
         </div>
-        <div className={styles['header-options-left']}>
-          <div className={styles['option-with-img']}>
+        <div className={styles.contentLeft}>
+          <div className={styles.navOption}>
             <BadgeCheck />
             <a href='https://en.dragon-ball-official.com/' target='_blank'>
               DragonBall Oficial
             </a>
           </div>
-          <div className={styles['option-with-img']}>
+          <div className={styles.navOption}>
             <ChevronsLeftRightEllipsis />
             <a href='https://web.dragonball-api.com/' target='_blank'>
               DragonBall API
             </a>
           </div>
         </div>
-        <div className={styles['header-options-right']}>
-          <div className={styles['content-container']}>
-            <div className={styles['content-text-info']}>
+        <div className={styles.contentRight}>
+          <div className={styles.containerSplit}>
+            <div className={styles.textContent}>
               {session ? (
                 <>
-                  <p className={styles['intro-text']}>{`${headerInfo.text}`}</p>
+                  <p className={styles.p}>{`${headerInfo.text}`}</p>
                   <Link
-                    className={styles['btn-profile']}
+                    className={styles.btnProfile}
                     href={`/profile/${headerInfo.userId}`}
                   >
                     Ver Perfil
@@ -73,14 +73,14 @@ export default async function Header() {
                   <LogoutButton />
                 </>
               ) : (
-                <p className={styles['intro-text']}>{`${headerInfo.text}`}</p>
+                <p className={styles.p}>{`${headerInfo.text}`}</p>
               )}
             </div>
 
-            <div className={styles['content-img-info']}>
+            <div className={styles.containerImg}>
               <Image
                 src={headerInfo.image}
-                className={styles['intro-img']}
+                className={styles.img}
                 fill={true}
                 alt={session ? `Icone do perfil` : `Icone de Introdução`}
               />

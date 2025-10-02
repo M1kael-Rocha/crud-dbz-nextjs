@@ -16,9 +16,9 @@ export default async function Dashboard() {
   });
 
   return (
-    <div className={styles['dashboard-container']}>
-      <div className={styles['dashboard-banner']}>
-        <div className={styles['banner-content']}>
+    <div className={styles.container}>
+      <div className={styles.banner}>
+        <div className={styles.content}>
           <h1>Universo de Dragon Ball</h1>
           <p>
             Aqui você pode construir sua própria coleção de personagens do
@@ -29,17 +29,17 @@ export default async function Dashboard() {
             legado da obra em um só lugar. Comece agora e dê vida ao seu
             catálogo personalizado.
           </p>
-          <Link href={'/character/create/'} className={styles['btn-create']}>
+          <Link href={'/character/create/'} className={styles.btnCreate}>
             Adicionar
           </Link>
         </div>
       </div>
 
       <h2>PERSONAGENS</h2>
-      <div className={styles['divisor']}></div>
+      <div className={styles.divisor}></div>
 
       <Suspense fallback={<Spinner />}>
-        <div className={styles['cards-container']}>{charactersCard}</div>
+        <div className={styles.containerCards}>{charactersCard}</div>
       </Suspense>
     </div>
   );

@@ -2,11 +2,10 @@
 
 import { getUserById } from '@/app/lib/credentials';
 import { getAllCharacters } from '@/app/lib/credentials-characters';
+import BtnBackPage from '@/app/ui/BtnBackPage';
 import Card from '@/app/ui/CharacterCard.js';
-import { ArrowLeft } from 'lucide-react';
 import styles from '@/app/styles/Profile.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default async function Profile({ params }) {
   const { id } = await params;
@@ -17,15 +16,11 @@ export default async function Profile({ params }) {
     .map(c => <Card {...c} loggedUserId={userProfile.id} key={c.id} />);
 
   return (
-    <div className={styles['profile-container']}>
-      <div className={styles['profile-box']}>
-        <div className={styles['btn-container']}>
-          <Link href={'/dashboard'}>
-            <ArrowLeft />
-          </Link>
-        </div>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <BtnBackPage />
         <h2>Perfil</h2>
-        <div className={styles['profile-img-container']}>
+        <div className={styles.containerImg}>
           <Image
             src={userProfile.imgProfile}
             width={128}
@@ -33,19 +28,19 @@ export default async function Profile({ params }) {
             alt={`Icone do perfil de ${userProfile.nome}`}
           />
         </div>
-        <div className={styles['profile-details']}>
+        <div className={styles.content}>
           <span>Nome:</span>
           <p>{userProfile.nome}</p>
         </div>
-        <div className={styles['profile-details']}>
+        <div className={styles.content}>
           <span>Email:</span>
           <p>{userProfile.email}</p>
         </div>
       </div>
 
       <h2>MEUS PERSONAGENS</h2>
-      <div className={styles['divisor']}></div>
-      <div className={styles['cards-container']}>{characters}</div>
-    </div>
+      <div className={styles.divisor}></div>
+      <div className={styles.containerCards}>{characters}</div>
+    </section>
   );
 }
