@@ -6,7 +6,7 @@
   --cor-destaque-ambar-claro: #fcd34d;
 }
 
-.card-container {
+.container {
   display: flex;
   flex: 1 1 350px;
   background-color: var(--cor-fundo-card);
@@ -21,13 +21,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-container:hover {
+.container:hover {
   transform: translateY(-2px);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
   border-color: rgba(245, 158, 11, 0.4);
 }
 
-.card-container:has(input:checked) {
+.container:has(input:checked) {
   border-color: var(--cor-destaque-ambar);
   background-color: #313740;
   transform: translateY(-2px);
@@ -36,7 +36,7 @@
     0 0 15px rgba(245, 158, 11, 0.6);
 }
 
-.card-icon {
+.icon {
   width: 25%;
   height: 80px;
   background-color: var(--cor-fundo-icone);
@@ -49,7 +49,7 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.card-icon svg {
+.icon svg {
   width: 45px;
   height: 45px;
   color: var(--cor-destaque-ambar-claro);
@@ -58,23 +58,23 @@
   transition: all 0.2s ease-in-out;
 }
 
-.card-container:has(input:checked) .card-icon {
+.container:has(input:checked) .icon {
   background-color: #2f2417;
 }
 
-.card-container:has(input:checked) .card-icon svg {
+.container:has(input:checked) .icon svg {
   color: var(--cor-destaque-ambar-claro);
   filter: drop-shadow(0 0 8px var(--cor-destaque-ambar))
     drop-shadow(0 0 15px rgba(245, 158, 11, 0.4));
   transform: scale(1.05);
 }
 
-.card-icon:hover svg {
+.icon:hover svg {
   color: var(--cor-destaque-ambar);
   filter: drop-shadow(0 0 6px var(--cor-destaque-ambar-claro));
 }
 
-.card-content {
+.content {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -82,28 +82,28 @@
   align-items: start;
 }
 
-.card-content h3 {
+.content h3 {
   color: var(--cor-texto-principal);
   font-size: 1.1em;
   transition: color 0.2s ease-in-out;
 }
 
-.card-content p {
+.content p {
   color: var(--cor-texto-principal);
   font-size: 0.9em;
   opacity: 0.8;
 }
 
-.card-container:has(input:checked) .card-content h3 {
+.container:has(input:checked) .content h3 {
   color: var(--cor-destaque-ambar-claro);
 }
 
-.card-container:has(input:checked) .card-content p {
+.container:has(input:checked) .content p {
   color: var(--cor-destaque-ambar);
   opacity: 1;
 }
 
-.hidden-checkbox {
+.hiddenCheckbox {
   position: absolute;
   opacity: 0;
   width: 0;

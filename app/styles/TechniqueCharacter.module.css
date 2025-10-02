@@ -1,4 +1,4 @@
-.cards-container {
+.container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   min-height: 5px;
 }
 
-.divisor-alt {
+.divisorAlt {
   background-color: #000;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -27,14 +27,14 @@
   min-height: 5px;
 }
 
-.title-h2 {
+.titleH2 {
   text-align: center;
   font-size: 32px;
   font-weight: 800;
   margin-top: 50px;
 }
 
-.techniques-banner {
+.banner {
   width: 95%;
   height: 400px;
   border-radius: 15px;
@@ -45,7 +45,7 @@
   margin: 50px auto 1px auto;
 }
 
-.banner-content {
+.content {
   width: 50%;
   height: 100%;
   display: flex;
@@ -59,7 +59,7 @@
   }
 }
 
-.btn-anchor {
+.btnAnchor {
   width: 20%;
   padding: 10px 15px;
   background-color: #fbc02d;
@@ -70,11 +70,11 @@
   transition: all 0.2s ease;
 }
 
-.btn-anchor:hover {
+.btnAnchor:hover {
   background-color: #f7b40d;
 }
 
-.form-box {
+.containerForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,27 +97,4 @@
     color: #000;
     border: 1px solid #000;
   }
-}
-
-.btn-container {
-  width: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 20px;
-  background-color: #fbc02d;
-  border-radius: 0.25rem;
-  transition: all 0.2s ease;
-  a {
-    color: #000;
-    height: 24px;
-    width: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-  }
-}
-
-.btn-container:hover {
-  background-color: #f7b40d;
 }

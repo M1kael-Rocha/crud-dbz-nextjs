@@ -1,0 +1,103 @@
+.character-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.character-card {
+  width: 50%;
+}
+
+.character-content {
+  background-color: #3c3e44;
+  display: flex;
+  padding: 10px;
+  min-height: 350px;
+}
+
+.transform-content {
+  background-color: #3c3e44;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  min-height: 350px;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.character-img-container {
+  position: relative;
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/42382431-modelo-de-triangulo-embacado-preto-escuro-vetor.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  border-radius: 15px;
+}
+
+.character-img {
+  object-fit: contain;
+  padding: 5px;
+}
+
+.character-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 10px;
+
+  h3 {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+}
+
+.details-infoGroup {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.details-infoItem {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+
+  p {
+    color: #fbc02d;
+    font-weight: 500;
+  }
+
+  span {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.details-infoDescription {
+  height: 100px;
+  p {
+    color: #fff;
+  }
+}
+
+.title-1,
+.title-2,
+.title-3 {
+  background-color: #272b33;
+  width: 100%;
+  h2 {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+.title-1 {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

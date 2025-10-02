@@ -1,0 +1,23 @@
+.backBtn {
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+}
+
+.backBtn:hover {
+  background-color: #fff;
+
+  svg:hover {
+    color: #000;
+  }
+}

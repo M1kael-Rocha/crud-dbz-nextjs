@@ -1,4 +1,4 @@
-.main-auth {
+.main {
   position: relative;
   background-image: url('../../public/login-bg.png');
   background-position: center;
@@ -13,7 +13,7 @@
   isolation: isolate;
 }
 
-.main-auth::before {
+.main::before {
   content: '';
   position: absolute;
   inset: 0;

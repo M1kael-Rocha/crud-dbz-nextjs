@@ -1,4 +1,4 @@
-.card-container {
+.container {
   display: flex;
   flex-direction: column;
   flex: 1 1 400px;
@@ -15,7 +15,7 @@
   background-color: #01080a;
 }
 
-.img-card-container {
+.containerImg {
   position: relative;
   background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/42382431-modelo-de-triangulo-embacado-preto-escuro-vetor.jpg');
   background-position: center;
@@ -26,12 +26,12 @@
   border-top-right-radius: 15px;
 }
 
-.img-character {
+.img {
   object-fit: contain;
   padding: 5px;
 }
 
-.name-card-container {
+.linkToProfileCharacter {
   padding: 10px;
 
   h3 {
@@ -39,7 +39,7 @@
   }
 }
 
-.details-card-container {
+.containerSplit {
   display: flex;
   flex-direction: column;
   background-color: #3c3e44;
@@ -47,12 +47,12 @@
   padding: 10px;
 }
 
-.details-row {
+.containerRow {
   width: 100%;
   display: flex;
 }
 
-.details-character {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +70,7 @@
   }
 }
 
-.details-character-description {
+.contentTextArea {
   padding: 0 10px;
   margin-top: 15px;
   height: 100px;
@@ -79,7 +79,7 @@
   }
 }
 
-.options-container {
+.containerOptions {
   display: flex;
   justify-content: center;
   align-items: center;

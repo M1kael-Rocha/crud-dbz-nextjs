@@ -1,4 +1,4 @@
-.header-container {
+.header {
   display: flex;
   justify-content: space-around;
   background-color: #000;
@@ -6,24 +6,24 @@
   padding: 20px;
 }
 
-.header-logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-options-left,
-.header-options-right {
+.contentLeft,
+.contentRight {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-options-left {
+.contentLeft {
   gap: 15px;
 }
 
-.option-with-img {
+.navOption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@
   }
 }
 
-.option-with-img:hover {
+.navOption:hover {
   a {
     color: #fbc02d;
     transform: scale(1.03);
@@ -59,42 +59,42 @@
   }
 }
 
-.header-options-right {
+.contentRight {
   width: 12%;
 }
 
-.content-container {
+.containerSplit {
   display: flex;
   width: 100%;
 }
 
-.content-text-info {
+.textContent {
   width: 70%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.intro-text {
+.p {
   font-size: 18px;
   color: white;
   width: 100%;
 }
 
-.btn-profile {
+.btnProfile {
   color: white;
   font-size: 14px;
   text-underline-offset: 1px;
   width: 40%;
 }
 
-.content-img-info {
+.containerImg {
   position: relative;
   width: 48px;
   height: 48px;
 }
 
-.intro-img {
+.img {
   object-fit: contain;
   border-radius: 50%;
 }

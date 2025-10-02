@@ -4,33 +4,6 @@
   height: auto;
 }
 
-.btn-container {
-  width: 28px;
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
-  transition: all 0.2s ease;
-  a {
-    color: #fff;
-    height: 24px;
-    width: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  a:hover {
-    color: #000;
-  }
-}
-
-.btn-container:hover {
-  background-color: #fff;
-}
-
 .form-box {
   width: 40%;
   height: auto;

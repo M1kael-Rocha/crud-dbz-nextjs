@@ -1,4 +1,4 @@
-.form-container {
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,34 +8,7 @@
   margin-bottom: 20px;
 }
 
-.btn-container {
-  width: 28px;
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
-  transition: all 0.2s ease;
-  a {
-    color: #fff;
-    height: 24px;
-    width: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  a:hover {
-    color: #000;
-  }
-}
-
-.btn-container:hover {
-  background-color: #fff;
-}
-
-.form-box {
+.container {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -74,7 +47,7 @@
   }
 }
 
-.form-input {
+.formInput {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -106,7 +79,7 @@
   }
 }
 
-.form-two-columns-container {
+.containerSplit {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -119,7 +92,7 @@
   }
 }
 
-.form-input-column {
+.formInputAlt {
   display: flex;
   background-color: #3c3e44;
   border-radius: 0.25rem;
@@ -145,7 +118,7 @@
   }
 }
 
-.img-container {
+.containerImg {
   position: relative;
   background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/42382431-modelo-de-triangulo-embacado-preto-escuro-vetor.jpg');
   background-position: center;
@@ -155,12 +128,12 @@
   border-radius: 15px;
 }
 
-.img-character {
+.img {
   object-fit: contain;
   padding: 5px;
 }
 
-.error-msg {
+.errorMsg {
   background-color: #fee;
   color: #c33;
   font-size: 15px;

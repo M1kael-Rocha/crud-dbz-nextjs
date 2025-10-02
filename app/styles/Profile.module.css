@@ -1,4 +1,4 @@
-.profile-container {
+.section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   margin-top: 50px;
 }
 
-.profile-box {
+.container {
   background-color: #e7e5e8;
   width: 10%;
   display: flex;
@@ -24,7 +24,7 @@
   }
 }
 
-.profile-img-container {
+.containerImg {
   display: flex;
   justify-content: center;
   img {
@@ -32,39 +32,12 @@
   }
 }
 
-.profile-details {
+.content {
   width: 100%;
 
   span {
     font-weight: 600;
   }
-}
-
-.btn-container {
-  width: 28px;
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
-  transition: all 0.2s ease;
-  a {
-    color: #fff;
-    height: 24px;
-    width: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  a:hover {
-    color: #000;
-  }
-}
-
-.btn-container:hover {
-  background-color: #fff;
 }
 
 .divisor {
@@ -75,7 +48,7 @@
   min-height: 5px;
 }
 
-.cards-container {
+.containerCards {
   width: 100%;
   display: flex;
   flex-wrap: wrap;

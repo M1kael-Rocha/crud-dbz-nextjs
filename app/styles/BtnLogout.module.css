@@ -1,11 +1,11 @@
-.btn-logout-container {
+.containerForm {
   display: flex;
   align-items: center;
   width: 40%;
   padding: 0;
 }
 
-.btn-logout {
+.btnLogout {
   background: none;
   color: white;
   border: none;
