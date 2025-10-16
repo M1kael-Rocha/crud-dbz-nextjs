@@ -8,7 +8,7 @@ Bem-vindo ao **Projeto Scouter Z**! Esta não é apenas mais uma aplicação CRU
 
 ![GIF da Aplicação](https://i.imgur.com/link-do-seu-gif-aqui.gif)
 
-_(DICA: Grave um GIF rápido da sua aplicação funcionando e substitua o link acima. Sites como [Ezgif](https://ezgif.com/video-to-gif) podem te ajudar!)_
+(Vou colocar um GIF aqui)
 
 ## 🚀 Funcionalidades
 
@@ -91,7 +91,7 @@ Este projeto ainda não atingiu sua forma final! Ideias para futuras transforma�
 
 ## ✍️ Autor
 
-Feito com muito Ki por **[Seu Nome Aqui]**.
+Feito com muito Ki por **[Mikael R. Bernardes]**.
 
 - **LinkedIn:** [https://www.linkedin.com/in/mikael-rocha-bernardes-39b6681a9](https://www.linkedin.com/in/mikael-rocha-bernardes-39b6681a9)
 - **GitHub:** [https://github.com/M1kael-Rocha](https://github.com/M1kael-Rocha)
